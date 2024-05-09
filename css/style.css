@@ -1,0 +1,332 @@
+ * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    font-family: "Orbitron", sans-serif;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+.linea {
+  width: 100%;
+  height: 2px;
+  background-color: #BCD028;
+}
+
+header {
+    width: 100vw;
+    height: auto;
+    background-color: black;
+    display:flex;
+    justify-content:space-between;
+    padding: 2% 10% 2% 10%;
+}
+
+#logotip {
+    width: 50%;
+    height: auto;
+}
+
+#logotip img{
+    width: 40%;
+}
+
+nav {
+    width: 50%;
+    display:flex;
+    justify-content:space-evenly;
+    flex-direction:row;
+}
+
+#menu {
+    width: auto;
+    height: auto;
+    list-style:none;
+    display:flex;
+    justify-content: center;
+}
+
+.linksmenu {
+    width: auto;
+    margin: 30px 20px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    border: 2px solid #BCD028; 
+    font-size: 16px; 
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+.linksmenu a {
+    text-decoration:none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 16px;
+    padding:10px;
+} 
+
+.linksmenu a:hover{
+    color: #BCD028;
+}
+
+hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #BCD028;
+    display:flex;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/*2. SOBRE AQUEST FESTIVAL*/
+
+.ravenous{
+    height: 20px;
+}
+
+#about {
+    width: 100vw;
+    height: auto;
+    padding:10%;
+    padding: 5% 10% 5% 10%;
+    display:flex;
+    flex-direction:row;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about img{
+    width: 50%;
+}
+
+h2 {
+    font-size: 2.5vw;
+    color: #BCD028;
+}
+
+.sobreaquestfestival {
+    width:  50%;
+    padding-right:2%;
+}
+
+.benvingutsalfestival {
+    width:  50%;
+    padding-left:2%;
+    color: #BCD028;
+    
+}
+
+/*3. FOOTER*/
+
+footer {
+  background-color: #BCD028;
+  color: #000;
+  padding: 5% 10% 5% 10%;
+  font-size: 15px;
+}
+
+.footer-caixa {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  width: 25%;
+  padding:2%;
+}
+
+.footer-section h2 {
+  color: #000;
+  margin-top:10%;
+  font-size: 35px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section a {
+  color: #000;
+  text-decoration: none;
+}
+
+#grups{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5% 10% 5% 10%;
+    color: white
+}
+
+.grup{
+    width: 40%;
+    height: auto;
+    padding-bottom: 10%;
+}
+
+.grup img{
+    width: 100%;
+    border: 2px solid #BCD028; 
+    font-size: 16px; 
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.contacte{
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5% 10% 5% 10%;
+    color: #BCD028;
+}
+
+.formulari{
+    width: 50%;
+    font-size: 1.35rem;
+}
+
+.mapa{
+    width: 50%;
+    background-color: #BCD028;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    padding: 2%;
+}
+
+button {
+    font-size: 1.7rem;
+    background-color: #BCD028;
+}
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+/*MÒBIL*/
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction:column;
+        padding-top:10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        .linksmenu a 
+            font-size: 2rem;
+            line-height:4rem;
+        }
+
+    #logotip img{
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu {
+        display:flex;
+        flex-direction:column;
+    }
+
+    #about {
+        flex-direction:column;
+        padding-top:20%;
+        padding-bottom:20%;
+    }
+
+    .sobreaquestfestival {
+        width:  100%;
+    } 
+
+    .benvingutsalfestival {
+        width:  100%;
+        padding-top:2%;
+    }
+
+    .footer-caixa {
+        flex-direction:column;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    a {
+        font-size: 1rem;
+    }
+
+    a:hover {
+        font-size: 1.2rem;
+        text-decoration-line: underline;
+    }
+
+    .footer-caixa h2{
+        font-size: 2rem;
+    }
+
+    .grup h2{
+        font-size: 1.2rem;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+}
+
+    
